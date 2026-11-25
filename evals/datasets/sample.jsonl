@@ -1,0 +1,2 @@
+{"id": "case-1", "input": "Check status for billing-api", "expected_substring": "billing-api"}
+{"id": "case-2", "input": "Hello Harness", "expected_substring": "Hello Harness"}

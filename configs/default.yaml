@@ -1,0 +1,28 @@
+llm:
+  provider: "mock" # Đổi thành "gemini" khi chạy thật với GEMINI_API_KEY
+  model: "gemini-2.5-flash"
+  temperature: 0.2
+  max_tokens: 4096
+  provider_options: {}
+
+limits:
+  max_steps: 15
+  max_tokens: 100000
+  max_cost_usd: 1.0
+  timeout_seconds: 120
+  turn_timeout_seconds: 300
+  max_repeated_tool_calls: 3
+  max_retries: 2
+  retry_backoff_seconds: 0.5
+
+memory:
+  short_term_window: 20
+  compaction_threshold_messages: 30
+  tool_output_max_chars: 4000
+  offload_dir: "traces/offload"
+
+observability:
+  trace_dir: "traces"
+  enable_tracing: true
+
+agents_dir: ".agent"
